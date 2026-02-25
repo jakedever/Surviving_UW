@@ -274,6 +274,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 643627471}
+  - component: {fileID: 643627472}
   m_Layer: 0
   m_Name: Terrain Chunk
   m_TagString: Untagged
@@ -297,6 +298,31 @@ Transform:
   - {fileID: 862655281}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &643627472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643627470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 705a5ad5fc9f24f8399cc2c6f3c8ecda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propSpawnPoints:
+  - {fileID: 1588638643}
+  - {fileID: 1878790447}
+  - {fileID: 1833664914}
+  - {fileID: 1685357114}
+  - {fileID: 1026856275}
+  propPrefabs:
+  - {fileID: 4006660067675503058, guid: 2773a474de1834a6ca6f0d469ad23bf8, type: 3}
+  - {fileID: 7206114303159684366, guid: e58773ea02704413384bc514a3e21a30, type: 3}
+  - {fileID: 877960243651342185, guid: f622add1905be461a8e3a1c485830bcb, type: 3}
+  - {fileID: 5527935595518751868, guid: 5e3923227c62e4d4db2600d46a1569e2, type: 3}
+  - {fileID: 7204385054415079067, guid: 38dd911ce27444148848abeda88c0406, type: 3}
+  - {fileID: 263941410559858757, guid: 010013c5454914d57a62fba9e4b33ae3, type: 3}
 --- !u!1 &862655279
 GameObject:
   m_ObjectHideFlags: 0
