@@ -16,11 +16,13 @@ public class PlayerMovement : MonoBehaviour
     public float lastHorizontalDirection;
     // [HideInInspector]
     public float lastVerticalDirection;
+    public UnityEngine.Vector2 lastMovedVector;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        lastMovedVector = new UnityEngine.Vector2(1, 0f);
     }
 
     // Update is called once per frame
@@ -44,10 +46,17 @@ public class PlayerMovement : MonoBehaviour
         if (moveDir.x != 0)
         {
             lastHorizontalDirection = moveDir.x;
+            lastMovedVector = new UnityEngine.Vector2(lastHorizontalDirection, 0f);
         }
         if (moveDir.y != 0)
         {
             lastVerticalDirection = moveDir.y;
+            lastMovedVector = new UnityEngine.Vector2(0f, lastVerticalDirection);
+        }
+
+        if (moveDir.x != 0 && moveDir.y != 0)
+        {
+            lastMovedVector = new UnityEngine.Vector2(lastHorizontalDirection, lastVerticalDirection);
         }
     }
 
