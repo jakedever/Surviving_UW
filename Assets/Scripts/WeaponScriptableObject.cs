@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[CreateAssetMenu(fileName ="WeaponScriptableObject", menuName = "ScriptableObjects/Weapon")]
+
+public class WeaponScriptableObject : ScriptableObject // Scriptable Objects save the value at runtime, don't reset on scene stop
+{
+    [SerializeField]
+    GameObject prefab;
+    public GameObject Prefab { get => prefab; private set => prefab = value; }
+    // Base Stats for Weapon
+    [SerializeField]
+    float damage;
+    public float Damage {get => damage; private set => damage = value; }
+    [SerializeField]
+    float speed;
+    public float Speed {get => speed; private set => speed = value; }
+    [SerializeField]
+    float cooldownDuration;
+    public float CooldownDuration {get => cooldownDuration; private set => cooldownDuration = value; } 
+    [SerializeField]
+    int pierce; // Max amount of time it can hit an enemy before being destroyed
+    public int Pierce {get => pierce; private set => pierce = value; } 
+}

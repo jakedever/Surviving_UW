@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 4867946436983862033}
   - component: {fileID: 3365866294081983570}
   - component: {fileID: 7766349558288218381}
+  - component: {fileID: -5296841551015060281}
   m_Layer: 0
   m_Name: Goose
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -165,4 +166,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f7eb35b4e754da580d744da3a5c88f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  enemyData: {fileID: 11400000, guid: 030a2ef943aed42d3b6af1afc6214471, type: 2}
+--- !u!114 &-5296841551015060281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7397034227268771249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba255a5b7d81419c963633578842535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 030a2ef943aed42d3b6af1afc6214471, type: 2}
