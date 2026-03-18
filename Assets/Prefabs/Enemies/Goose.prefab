@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3365866294081983570}
   - component: {fileID: 7766349558288218381}
   - component: {fileID: -5296841551015060281}
+  - component: {fileID: 2917215472478644964}
   m_Layer: 0
   m_Name: Goose
   m_TagString: enemy
@@ -180,3 +181,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 030a2ef943aed42d3b6af1afc6214471, type: 2}
+--- !u!114 &2917215472478644964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7397034227268771249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf19d3bd33c1422fb40194a792f6fd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - name: Blue Gem
+    itemPrefab: {fileID: 1046468819013132687, guid: 9588823a8a73a47be97732955ce291a8, type: 3}
+    dropRate: 100

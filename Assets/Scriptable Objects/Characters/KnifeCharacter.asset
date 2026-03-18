@@ -9,9 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56aff72804bf543fd8f4a9ae88fed583, type: 3}
-  m_Name: Goose 1 Enemy
+  m_Script: {fileID: 11500000, guid: 8d54c8a6a12c341e5bd7b50b9b78b129, type: 3}
+  m_Name: KnifeCharacter
   m_EditorClassIdentifier: 
-  moveSpeed: 1.5
-  maxHealth: 3
-  damage: 35
+  startingWeapon: {fileID: 0}
+  maxHealth: 100
+  recovery: 0
+  moveSpeed: 5
+  might: 2
+  projectileSpeed: 2
