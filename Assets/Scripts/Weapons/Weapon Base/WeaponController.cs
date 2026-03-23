@@ -20,7 +20,7 @@ public class WeaponController : MonoBehaviour
     }
 
     // Update is called once per frame
-     protected void Update()
+    protected void Update()
     {
         currentCooldown -= Time.deltaTime;
         if (currentCooldown <= 0f) // Once cooldown becomes zero, attack
