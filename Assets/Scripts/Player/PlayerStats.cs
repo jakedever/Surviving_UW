@@ -2,17 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Jobs.LowLevel.Unsafe;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class PlayerStats : MonoBehaviour
 {
-   public CharacterScriptableObject characterData;
+    public CharacterScriptableObject characterData;
 
-   // Current Stats
-   float currentHealth;
-   float currentRecovery;
-   float currentMoveSpeed;
-   float currentMight;
-   float currentProjectileSpeed;
+    // Current Stats
+    // [HideInInspector]
+    public float currentHealth;
+    [HideInInspector]
+    public float currentRecovery;
+    [HideInInspector]
+    public float currentMoveSpeed;
+    [HideInInspector]
+    public float currentMight;
+    [HideInInspector]
+    public float currentProjectileSpeed;
+    [HideInInspector]
+    public float currentMagnet;
+
+    public List<GameObject> spawnedWeapons;
 
     // Experience Management
     [Header("Experience/Level")]
@@ -32,11 +42,18 @@ public class PlayerStats : MonoBehaviour
 
     void Awake()
     {
+        characterData = CharacterSelector.GetData();
+        CharacterSelector.instance.DestroySingleton();
+
         currentHealth = characterData.MaxHealth;
         currentRecovery = characterData.Recovery;
         currentMoveSpeed = characterData.MoveSpeed;
         currentMight = characterData.Might;
         currentProjectileSpeed = characterData.ProjectileSpeed; 
+        currentMagnet = characterData.Magnet;
+
+        // Pass starting weapon
+        SpawnWeapon(characterData.StartingWeapon);
     }
 
     void Start()
@@ -53,8 +70,11 @@ public class PlayerStats : MonoBehaviour
         }
         else if (isInvincible)
         {
-             
+             isInvincible = false;
         }
+
+        Recover();
+
     }
     public void IncreaseExperience(int amount)
     {
@@ -85,7 +105,7 @@ public class PlayerStats : MonoBehaviour
 
     // I-frames
     [Header("I-Frames")]
-    public float invicibilityDuration; 
+    public float invicibilityDuration = 1; 
     float invincibilityTimer;
     bool isInvincible;
 
@@ -100,8 +120,26 @@ public class PlayerStats : MonoBehaviour
                 currentHealth = characterData.MaxHealth; 
             }
         }
-        
+    }
 
+    void Recover ()
+    {
+        if (currentHealth < characterData.MaxHealth) {
+            currentHealth += currentRecovery * Time.deltaTime; 
+
+            if (currentHealth > characterData.MaxHealth)
+            {
+                currentHealth = characterData.MaxHealth;
+            }
+        }
+    }
+
+    public void SpawnWeapon(GameObject weapon)
+    {
+        //Spawn starting weapon
+        GameObject spawnedWeapon = Instantiate(weapon, transform.position, Quaternion.identity);
+        spawnedWeapon.transform.SetParent(transform);
+        spawnedWeapons.Add(spawnedWeapon);
     }
 
     public void TakeDamage(float dmg)
@@ -109,9 +147,10 @@ public class PlayerStats : MonoBehaviour
         // If the player is not current invincible, take damage
         if (!isInvincible)
         {
+            isInvincible = true;
             currentHealth -= dmg;
             invincibilityTimer = invicibilityDuration;
-            isInvincible = true;
+            
 
             Debug.Log("Player took " + dmg + " damage");
         }

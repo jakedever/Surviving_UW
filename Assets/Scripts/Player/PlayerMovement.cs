@@ -17,14 +17,16 @@ public class PlayerMovement : MonoBehaviour
 
     // References
     Rigidbody2D rb;
-    public CharacterScriptableObject characterData;
+    PlayerStats player;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
+        player = GetComponent<PlayerStats>();
         lastMovedVector = new UnityEngine.Vector2(1, 0f);
     }
 
@@ -65,6 +67,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
-        rb.velocity = new UnityEngine.Vector2(moveDir.x * characterData.MoveSpeed, moveDir.y * characterData.MoveSpeed);
+        rb.velocity = new UnityEngine.Vector2(moveDir.x * player.currentMoveSpeed, moveDir.y * player.currentMoveSpeed);
     }
 }
