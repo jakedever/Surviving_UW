@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 543bcf8234fd145a3ad026baadc2ea04, type: 3}
-  m_Name: Fireball Weapon
+  m_Name: Knife Weapon Level 2
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2649823050821726897, guid: 1263cc40def9d47c5adbf8edd30b8b86, type: 3}
-  damage: 4
-  speed: 3
-  cooldownDuration: 5
-  pierce: 0
-  level: 1
-  nextLevelPrefab: 0
+  prefab: {fileID: 7816660883170427801, guid: 3e68c1747b34c45b9a4481187d7050aa, type: 3}
+  damage: 2
+  speed: 12
+  cooldownDuration: 2.5
+  pierce: 1
+  level: 2
+  nextLevelPrefab: {fileID: 0}
+  icon: {fileID: -1262216586, guid: 864b23439e2c545a28e67587b5db992a, type: 3}

@@ -24,6 +24,11 @@ public class MeleeWeaponBehaviour : MonoBehaviour
 
     } 
 
+    public float GetCurrentDamage()
+    {
+        return currentDamage += FindObjectOfType<PlayerStats>().currentMight;
+    }
+
     // Start is called before the first frame update
     protected virtual void Start()
     {
@@ -35,13 +40,13 @@ public class MeleeWeaponBehaviour : MonoBehaviour
         if (col.CompareTag("enemy"))
         {
             EnemyStats enemy = col.GetComponent<EnemyStats>();
-            enemy.TakeDamage(currentDamage);
+            enemy.TakeDamage(GetCurrentDamage());
         }
         else if (col.CompareTag("Props"))
         {
             if (col.gameObject.TryGetComponent(out BreakableProps breakable))
             {
-                breakable.TakeDamage(currentDamage);
+                breakable.TakeDamage(GetCurrentDamage());
             }
         }
     }

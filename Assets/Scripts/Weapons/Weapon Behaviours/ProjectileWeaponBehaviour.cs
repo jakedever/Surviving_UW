@@ -23,6 +23,10 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
         currentPierce = weaponData.Pierce;
     } 
 
+    public float GetCurrentDamage()
+    {
+        return currentDamage += FindObjectOfType<PlayerStats>().currentMight;
+    }
 
     // Start is called before the first frame update
     protected virtual void Start()
@@ -86,14 +90,14 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
         if (col.CompareTag("enemy"))   
         {
             EnemyStats enemy = col.GetComponent<EnemyStats>();
-            enemy.TakeDamage(currentDamage); // Make sure to use current damage incase modifiers
+            enemy.TakeDamage(GetCurrentDamage()); // Make sure to use current damage incase modifiers
             ReducePierce();
         }
         else if (col.CompareTag("Props"))
         {
             if (col.gameObject.TryGetComponent(out BreakableProps breakable))
             {
-                breakable.TakeDamage(currentDamage);
+                breakable.TakeDamage(GetCurrentDamage());
                 currentPierce--;
             }
         }

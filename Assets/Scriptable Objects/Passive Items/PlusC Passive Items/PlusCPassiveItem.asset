@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56aff72804bf543fd8f4a9ae88fed583, type: 3}
-  m_Name: Goose 1 Enemy
+  m_Script: {fileID: 11500000, guid: e02317894984b490d8bc85ef4edecf0d, type: 3}
+  m_Name: PlusCPassiveItem
   m_EditorClassIdentifier: 
-  moveSpeed: 1.5
-  maxHealth: 3
-  damage: 10
+  multiplier: 1
+  level: 1
+  nextLevelPrefab: {fileID: 0}
+  icon: {fileID: -551712399, guid: b5299eccd24f141d69d7db97becf1e71, type: 3}
