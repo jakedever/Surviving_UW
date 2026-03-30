@@ -6,6 +6,13 @@ using UnityEngine;
 public class CharacterScriptableObject : ScriptableObject
 {
     [SerializeField]
+    Sprite icon;
+    public Sprite Icon  { get => icon; set => icon = value; }
+    [SerializeField]
+    new string name;
+    public string Name { get => name; set => name = value; }
+    
+    [SerializeField]
     GameObject startingWeapon;
     public GameObject StartingWeapon { get => startingWeapon; set => startingWeapon = value; }
 

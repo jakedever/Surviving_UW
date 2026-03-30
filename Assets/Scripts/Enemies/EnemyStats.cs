@@ -32,7 +32,7 @@ public class EnemyStats : MonoBehaviour
 
     void Update()
     {
-        if(Vector2.Distance(transform.position, player.position) >= despawnDistance)
+        if(!GameManager.instance.isGameOver && Vector2.Distance(transform.position, player.position) >= despawnDistance)
         {
             ReturnEnemy();
         }

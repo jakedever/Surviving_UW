@@ -6,6 +6,6 @@ public class StimulantsPassiveItem : PassiveItem
 {
     protected override void ApplyModifer()
     {
-        player.currentMoveSpeed *= 1 + passiveItemData.Multiplier / 100f;
+        player.CurrentMoveSpeed *= 1 + passiveItemData.Multiplier / 100f;
     }
 }

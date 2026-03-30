@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d54c8a6a12c341e5bd7b50b9b78b129, type: 3}
   m_Name: MateoCharacter
   m_EditorClassIdentifier: 
+  icon: {fileID: 1782291140, guid: 864b23439e2c545a28e67587b5db992a, type: 3}
+  name: Mateo
   startingWeapon: {fileID: 6264697635562647585, guid: 7c9106214e734473993f98f768c94c3b, type: 3}
   maxHealth: 800
   recovery: 2

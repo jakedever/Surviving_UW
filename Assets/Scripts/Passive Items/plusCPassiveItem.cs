@@ -6,6 +6,6 @@ public class plusCPassiveItem : PassiveItem
 {
     protected override void ApplyModifer()
     {
-        player.currentMight += passiveItemData.Multiplier;
+        player.CurrentMight += passiveItemData.Multiplier;
     }
 }

@@ -18,6 +18,8 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         // Constantly move towards player  
-        transform.position = UnityEngine.Vector2.MoveTowards(transform.position, player.transform.position, enemy.currentMoveSpeed * Time.deltaTime);
+        if (!GameManager.instance.isGameOver) {
+            transform.position = UnityEngine.Vector2.MoveTowards(transform.position, player.transform.position, enemy.currentMoveSpeed * Time.deltaTime);
+        }
     }
 }

@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d54c8a6a12c341e5bd7b50b9b78b129, type: 3}
   m_Name: OmarCharacter
   m_EditorClassIdentifier: 
+  icon: {fileID: 615513247, guid: 864b23439e2c545a28e67587b5db992a, type: 3}
+  name: Omar
   startingWeapon: {fileID: 6711917544086058219, guid: 1200248112acf4d3b83fe0ba694c9257, type: 3}
-  maxHealth: 1100
+  maxHealth: 1
   recovery: 1
   moveSpeed: 5
   might: 1
