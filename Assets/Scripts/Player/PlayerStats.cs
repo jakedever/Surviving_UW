@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Unity.Jobs.LowLevel.Unsafe;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -143,6 +145,11 @@ public class PlayerStats : MonoBehaviour
     InventoryManager inventory; 
     public int weaponIndex;
     public int passiveItemsIndex;
+    
+    [Header("UI")]
+    public Image healthBar;
+    public Image expBar;
+    public Text levelText;
 
     public GameObject secondWeapon;
     public GameObject firstPassiveItem, secondPassiveItem;
@@ -183,6 +190,10 @@ public class PlayerStats : MonoBehaviour
         // SpawnPassiveItem(secondPassiveItem);
         // Initialize the experience require for level ups to the first value in the list 
         experienceCap = levelRanges[0].experienceCapIncrease;
+
+        UpdateHealthBar();
+        UpdateExpBar();
+        UpdateLevelText();
     }
 
     private void Update()
@@ -204,6 +215,8 @@ public class PlayerStats : MonoBehaviour
         experience += amount;
 
         LevelUpChecker();
+
+        UpdateExpBar();
     }
 
     void LevelUpChecker ()
@@ -223,6 +236,8 @@ public class PlayerStats : MonoBehaviour
                 }
             }
             experienceCap += experienceCapIncrease;
+
+            UpdateLevelText();
 
             GameManager.instance.StartLevelUp();
         }
@@ -287,6 +302,22 @@ public class PlayerStats : MonoBehaviour
 
         passiveItemsIndex++;
     }
+
+    void UpdateHealthBar()
+    {
+        // Update the health bar 
+        healthBar.fillAmount = currentHealth / characterData.MaxHealth;
+    }
+
+    void UpdateExpBar()
+    {
+        expBar.fillAmount = (float)experience / experienceCap;
+    }
+
+    void UpdateLevelText()
+    {
+        levelText.text = "LV " + level.ToString();
+    }
     public void TakeDamage(float dmg)
     {
         // If the player is not current invincible, take damage
@@ -304,6 +335,8 @@ public class PlayerStats : MonoBehaviour
         {
             Kill();
         }
+
+        UpdateHealthBar();
     }
     public void Kill()
     {

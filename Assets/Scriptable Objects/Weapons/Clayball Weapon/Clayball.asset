@@ -18,7 +18,7 @@ MonoBehaviour:
   cooldownDuration: 4
   pierce: 1
   level: 1
-  nextLevelPrefab: {fileID: 0}
+  nextLevelPrefab: {fileID: 1759147341430757374, guid: af2afabd7caf845d986ede44f92e04ac, type: 3}
   icon: {fileID: 21300000, guid: 1a89aec265cbc4f5d8cc34a8f00b5e7c, type: 3}
   name: Clayball
   description: A clump of clay. Splits on contact.

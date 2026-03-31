@@ -80,7 +80,6 @@ public class EnemySpawner : MonoBehaviour
         // If more waves to start after current wave, move on to next wave
         if (currentWaveCount < waves.Count - 1)
         {
-            Debug.Log("Leaving wave " + currentWaveCount);
             currentWaveCount++;
             CalculateWaveQuota();
         }
@@ -95,7 +94,6 @@ public class EnemySpawner : MonoBehaviour
         }
 
         waves[currentWaveCount].waveQuota = currentWaveQuota;
-        Debug.LogWarning(currentWaveQuota);
     }
 
     void SpawnEnemies ()
