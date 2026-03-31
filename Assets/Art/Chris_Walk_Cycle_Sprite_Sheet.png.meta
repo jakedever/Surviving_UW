@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: f9df8d7f9dfdaad4392c60d1d622185c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6880111905629040082
+    second: Chris_Walk_Cycle_Sprite_Sheet_0
+  - first:
+      213: 1929889333426310439
+    second: Chris_Walk_Cycle_Sprite_Sheet_1
+  - first:
+      213: 883298696747476330
+    second: Chris_Walk_Cycle_Sprite_Sheet_2
+  - first:
+      213: 5552211943195313118
+    second: Chris_Walk_Cycle_Sprite_Sheet_3
+  - first:
+      213: -9178727799165269253
+    second: Chris_Walk_Cycle_Sprite_Sheet_4
+  - first:
+      213: -7122370792782387623
+    second: Chris_Walk_Cycle_Sprite_Sheet_5
+  - first:
+      213: 3421420001244069683
+    second: Chris_Walk_Cycle_Sprite_Sheet_6
+  - first:
+      213: 7426092659477572078
+    second: Chris_Walk_Cycle_Sprite_Sheet_7
+  - first:
+      213: 158992659576336314
+    second: Chris_Walk_Cycle_Sprite_Sheet_8
+  - first:
+      213: 613605688411090209
+    second: Chris_Walk_Cycle_Sprite_Sheet_9
+  - first:
+      213: 1435233695189772346
+    second: Chris_Walk_Cycle_Sprite_Sheet_10
+  - first:
+      213: -4904544775939456301
+    second: Chris_Walk_Cycle_Sprite_Sheet_11
+  - first:
+      213: -9190702271719474727
+    second: Chris_Walk_Cycle_Sprite_Sheet_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chris_Walk_Cycle_Sprite_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd64f563511b7f50800000000000000
+      internalID: 6880111905629040082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chris_Walk_Cycle_Sprite_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 2
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72dc0beaf1858ca10800000000000000
+      internalID: 1929889333426310439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chris_Walk_Cycle_Sprite_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 2
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a65e23a1c7b124c00800000000000000
+      internalID: 883298696747476330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chris_Walk_Cycle_Sprite_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1
+        width: 46
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed386df685b6d0d40800000000000000
+      internalID: 5552211943195313118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chris_Walk_Cycle_Sprite_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 1
+        width: 46
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfa40c892bb9e9080800000000000000
+      internalID: -9178727799165269253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chris_Walk_Cycle_Sprite_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1
+        width: 46
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 956a699ff71482d90800000000000000
+      internalID: -7122370792782387623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chris_Walk_Cycle_Sprite_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 2
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33fb1991d535b7f20800000000000000
+      internalID: 3421420001244069683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chris_Walk_Cycle_Sprite_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 2
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9eb4dbde7ce0760800000000000000
+      internalID: 7426092659477572078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chris_Walk_Cycle_Sprite_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 2
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf21f34bfad43200800000000000000
+      internalID: 158992659576336314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chris_Walk_Cycle_Sprite_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 2
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12de6e16f17f38800800000000000000
+      internalID: 613605688411090209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chris_Walk_Cycle_Sprite_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 2
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a38257b0179fae310800000000000000
+      internalID: 1435233695189772346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chris_Walk_Cycle_Sprite_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 1
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d2812df28e8febb0800000000000000
+      internalID: -4904544775939456301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chris_Walk_Cycle_Sprite_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 1
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9f8c17af0147080800000000000000
+      internalID: -9190702271719474727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Chris_Walk_Cycle_Sprite_Sheet_0: 6880111905629040082
+      Chris_Walk_Cycle_Sprite_Sheet_1: 1929889333426310439
+      Chris_Walk_Cycle_Sprite_Sheet_10: 1435233695189772346
+      Chris_Walk_Cycle_Sprite_Sheet_11: -4904544775939456301
+      Chris_Walk_Cycle_Sprite_Sheet_12: -9190702271719474727
+      Chris_Walk_Cycle_Sprite_Sheet_2: 883298696747476330
+      Chris_Walk_Cycle_Sprite_Sheet_3: 5552211943195313118
+      Chris_Walk_Cycle_Sprite_Sheet_4: -9178727799165269253
+      Chris_Walk_Cycle_Sprite_Sheet_5: -7122370792782387623
+      Chris_Walk_Cycle_Sprite_Sheet_6: 3421420001244069683
+      Chris_Walk_Cycle_Sprite_Sheet_7: 7426092659477572078
+      Chris_Walk_Cycle_Sprite_Sheet_8: 158992659576336314
+      Chris_Walk_Cycle_Sprite_Sheet_9: 613605688411090209
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
