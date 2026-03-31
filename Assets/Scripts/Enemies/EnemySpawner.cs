@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.AI;
@@ -55,7 +56,7 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(currentWaveCount < waves.Count && waves[currentWaveCount].spawnCount == 0) // Check if wave has ended and next wace should start
+        if(currentWaveCount < waves.Count && waves[currentWaveCount].spawnCount == waves[currentWaveCount].waveQuota) // Check if wave has ended and next wace should start
         {
             StartCoroutine(BeginNextWave());
         }
@@ -79,6 +80,7 @@ public class EnemySpawner : MonoBehaviour
         // If more waves to start after current wave, move on to next wave
         if (currentWaveCount < waves.Count - 1)
         {
+            Debug.Log("Leaving wave " + currentWaveCount);
             currentWaveCount++;
             CalculateWaveQuota();
         }
