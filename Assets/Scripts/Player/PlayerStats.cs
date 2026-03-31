@@ -179,7 +179,7 @@ public class PlayerStats : MonoBehaviour
         // Pass starting weapon
         SpawnWeapon(characterData.StartingWeapon);
         //SpawnWeapon(secondWeapon);
-        //SpawnPassiveItem(firstPassiveItem);
+        SpawnPassiveItem(firstPassiveItem);
         //SpawnPassiveItem(secondPassiveItem);
         // Initialize the experience require for level ups to the first value in the list 
         experienceCap = levelRanges[0].experienceCapIncrease;
@@ -223,15 +223,15 @@ public class PlayerStats : MonoBehaviour
                 }
             }
             experienceCap += experienceCapIncrease;
+
+            GameManager.instance.StartLevelUp();
         }
     }
-
     // I-frames
     [Header("I-Frames")]
     public float invicibilityDuration = 1; 
     float invincibilityTimer;
     bool isInvincible;
-
     public void RestoreHealth(int amount)
     {
         if (CurrentHealth < characterData.MaxHealth)
@@ -244,7 +244,6 @@ public class PlayerStats : MonoBehaviour
             }
         }
     }
-
     void Recover ()
     {
         if (CurrentHealth < characterData.MaxHealth) {
@@ -256,7 +255,6 @@ public class PlayerStats : MonoBehaviour
             }
         }
     }
-
     public void SpawnWeapon(GameObject weapon)
     {
         if(weaponIndex >= inventory.weaponSlots.Count - 1)
@@ -273,7 +271,6 @@ public class PlayerStats : MonoBehaviour
 
         weaponIndex++;
     }
-
     public void SpawnPassiveItem(GameObject item)
     {
         if(passiveItemsIndex >= inventory.passiveItemSlots.Count - 1)
@@ -290,7 +287,6 @@ public class PlayerStats : MonoBehaviour
 
         passiveItemsIndex++;
     }
-
     public void TakeDamage(float dmg)
     {
         // If the player is not current invincible, take damage
@@ -309,7 +305,6 @@ public class PlayerStats : MonoBehaviour
             Kill();
         }
     }
-
     public void Kill()
     {
         if(!GameManager.instance.isGameOver)

@@ -16,3 +16,5 @@ MonoBehaviour:
   level: 2
   nextLevelPrefab: {fileID: 0}
   icon: {fileID: -551712399, guid: b5299eccd24f141d69d7db97becf1e71, type: 3}
+  name: "+ C \u2014 2"
+  description: + 1 additional damage

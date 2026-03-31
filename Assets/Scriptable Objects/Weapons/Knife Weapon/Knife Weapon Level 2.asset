@@ -20,3 +20,5 @@ MonoBehaviour:
   level: 2
   nextLevelPrefab: {fileID: 0}
   icon: {fileID: -1262216586, guid: 864b23439e2c545a28e67587b5db992a, type: 3}
+  name: "Knife \u2014 2"
+  description: + 1 damage, + 3 attack speed

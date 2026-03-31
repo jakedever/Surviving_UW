@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   multiplier: 25
   level: 1
-  nextLevelPrefab: {fileID: 0}
+  nextLevelPrefab: {fileID: 2993129476219110821, guid: d2f33c881cc6f49469ed24048d94afd7, type: 3}
   icon: {fileID: -1869235719, guid: 4067920bf5cca48d4ade68067bd41c19, type: 3}
+  name: Stimulants
+  description: Movement speed increased by 25%

@@ -16,3 +16,5 @@ MonoBehaviour:
   level: 1
   nextLevelPrefab: {fileID: 0}
   icon: {fileID: -1869235719, guid: 4067920bf5cca48d4ade68067bd41c19, type: 3}
+  name: "Simulants \u2014 2"
+  description: An additional 10% increase in Movement speed
