@@ -76,6 +76,6 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        rb.velocity = new UnityEngine.Vector2(moveDir.x * player.CurrentMoveSpeed, moveDir.y * player.CurrentMoveSpeed);
+        rb.linearVelocity = new UnityEngine.Vector2(moveDir.x * player.CurrentMoveSpeed, moveDir.y * player.CurrentMoveSpeed);
     }
 }

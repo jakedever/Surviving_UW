@@ -86,7 +86,8 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
 
 
     protected virtual void OnTriggerEnter2D(Collider2D col) 
-    {    
+    {   
+        Debug.Log(col + " was hit");
         if (col.CompareTag("enemy"))   
         {
             EnemyStats enemy = col.GetComponent<EnemyStats>();
@@ -103,7 +104,7 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
         }
     }
 
-    void ReducePierce()
+    protected void ReducePierce()
     {
         currentPierce--;
         if (currentPierce == 0)

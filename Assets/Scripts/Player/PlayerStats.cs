@@ -178,9 +178,9 @@ public class PlayerStats : MonoBehaviour
         Debug.Log("Should pass weapons?");
         // Pass starting weapon
         SpawnWeapon(characterData.StartingWeapon);
-        //SpawnWeapon(secondWeapon);
+        SpawnWeapon(secondWeapon);
         SpawnPassiveItem(firstPassiveItem);
-        //SpawnPassiveItem(secondPassiveItem);
+        // SpawnPassiveItem(secondPassiveItem);
         // Initialize the experience require for level ups to the first value in the list 
         experienceCap = levelRanges[0].experienceCapIncrease;
     }
