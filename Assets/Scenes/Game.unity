@@ -7944,6 +7944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 0}
+  currentAttackSpeed: 1
   experience: 0
   level: 1
   experienceCap: 0
@@ -7962,9 +7963,9 @@ MonoBehaviour:
   healthBar: {fileID: 1742305840}
   expBar: {fileID: 1918752774}
   levelText: {fileID: 1005064572}
-  secondWeapon: {fileID: 1759147341430757374, guid: 1089bd24c4f974b7ea4a3b143b6537b8, type: 3}
-  firstPassiveItem: {fileID: 2993129476219110821, guid: 6665f84b94d6d427bb581c570b7b080a, type: 3}
-  secondPassiveItem: {fileID: 6121102438113364012, guid: 55f49561078924543a2e0f3cf3500a5d, type: 3}
+  secondWeapon: {fileID: 7941060289164970699, guid: b1966db29d54e42c490230e9fe26b1fd, type: 3}
+  firstPassiveItem: {fileID: 0}
+  secondPassiveItem: {fileID: 0}
   invicibilityDuration: 0
 --- !u!114 &1963704560
 MonoBehaviour:

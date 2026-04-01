@@ -7,20 +7,25 @@ using UnityEngine;
 public class MeleeWeaponBehaviour : MonoBehaviour
 {
     public WeaponScriptableObject weaponData;
+    protected PlayerStats playerStats;
     public float destroyAfterSeconds;
 
     protected float currentDamage;
     protected float currentSpeed;
     protected float currentCooldownDuration;
     protected int currentPierce;
+    public float currentMiscellaneous;
 
 
     void Awake()
     {
+        playerStats = FindFirstObjectByType<PlayerStats>();
         currentDamage = weaponData.Damage;
         currentSpeed = weaponData.Speed;
         currentCooldownDuration = weaponData.CooldownDuration;
         currentPierce = weaponData.Pierce;
+        currentMiscellaneous = weaponData.Miscellaneous;
+
 
     } 
 

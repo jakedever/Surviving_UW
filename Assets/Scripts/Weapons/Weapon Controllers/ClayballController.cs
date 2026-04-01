@@ -48,21 +48,6 @@ public class ClayballController : WeaponController
 
         cb2Transform.position = location.position;
         cb2Transform.localScale *= 0.5f; // Cuts size of prefab in half
-        cb2Transform.Rotate(0, 0, -45); // Visually rotates clayball sprite 45 degrees counter clockwise
-        
-        
-
-        // spawnedClayball.GetComponent<ClayballBehaviour>().DirectionChecker(pm.lastMovedVector);
-
-        /*
-        cb1Behaviour.weaponData.Miscellaneous = splitsLeft; // Ensures that the spliting doesn't happen infinitely 
-        spawnedClayball_1.transform.position = location.position;
-        spawnedClayball_1.transform.localScale *= new Vector3 (0.5f, 0.5f, 0.5f);
-        spawnedClayball_1.transform.rotation += Quaternion.Euler(0, 0, 45);
-        */
-
-        // Clayball that splits right
-        // GameObject spawnedClayball_2 = Instantiate(weaponData.Prefab);
-        // UnityEngine.Debug.Log("AttackAndSplit Called at location " + location);
+        cb2Transform.Rotate(0, 0, -45); // Visually rotates clayball sprite 45 degrees clockwise
     }
 }

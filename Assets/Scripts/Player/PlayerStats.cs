@@ -19,6 +19,7 @@ public class PlayerStats : MonoBehaviour
     float currentRecovery;
     float currentMoveSpeed;
     float currentMight;
+    public float currentAttackSpeed = 1f;
     float currentProjectileSpeed;
     float currentMagnet;
 
@@ -86,6 +87,23 @@ public class PlayerStats : MonoBehaviour
                 if (GameManager.instance != null)
                 {
                     GameManager.instance.currentMightDisplay.text = "Might: " + currentMight;
+                }
+            }
+        }
+    }
+
+    public float CurrentAttackSpeed
+    {
+        get { return currentAttackSpeed; }
+        set
+        {
+            if(currentAttackSpeed != value)
+            {
+                currentAttackSpeed = value;
+                // Update realtime value of the stat
+                if (GameManager.instance != null)
+                {
+                    GameManager.instance.currentMightDisplay.text = "Attack Speed: " + currentAttackSpeed;
                 }
             }
         }
@@ -182,11 +200,11 @@ public class PlayerStats : MonoBehaviour
 
         GameManager.instance.AssignChosenCharacterUI(characterData);
 
-        Debug.Log("Should pass weapons?");
         // Pass starting weapon
         SpawnWeapon(characterData.StartingWeapon);
-        SpawnWeapon(secondWeapon);
-        SpawnPassiveItem(firstPassiveItem);
+        SpawnWeapon(secondWeapon); // Allows for manual attachment
+
+        // SpawnPassiveItem(firstPassiveItem);
         // SpawnPassiveItem(secondPassiveItem);
         // Initialize the experience require for level ups to the first value in the list 
         experienceCap = levelRanges[0].experienceCapIncrease;
