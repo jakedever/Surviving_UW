@@ -17,6 +17,7 @@ public class EnergyDrinkBehaviour : MeleeWeaponBehaviour
 
     protected void ChangeAttackSpeed(float amount)
     {
+        UnityEngine.Debug.Log("Changed attack speed by amount " + amount);
         if (amount > 0)
         {
             playerStats.CurrentAttackSpeed *= amount;

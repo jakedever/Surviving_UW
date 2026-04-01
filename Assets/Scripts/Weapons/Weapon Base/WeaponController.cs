@@ -27,20 +27,30 @@ public class WeaponController : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {       
+
         currentCooldown -= Time.deltaTime;
-        // UnityEngine.Debug.Log("CooldownDuration = "+ weaponData.CooldownDuration + " || " + currentCooldown + " = currentCooldown. weaponData name is Energy Drink: " + (weaponData.Name == "Energy Drink"));
-        UnityEngine.Debug.Log(currentCooldown + " = currentCooldown. ReducedCooldown = " + weaponData.CooldownDuration / playerStats.CurrentAttackSpeed);
-        
-        if (weaponData.Name != "Energy Drink" && currentCooldown <= 0f /*+ weaponData.CooldownDuration / playerStats.CurrentAttackSpeed*/ )
+
+        if (weaponData.Name != "Energy Drink")
         {
-            // UnityEngine.Debug.Log("Not Energydrink update");
+            // Speed up additionally based on current attack speed
+            UnityEngine.Debug.Log("Speeding cooldown progression up by an additional: " + (playerStats.currentAttackSpeed - 1));
+            currentCooldown -= Time.deltaTime * (playerStats.currentAttackSpeed - 1);
+        }
+
+        // As long as weapon isn't Energy Drink, does currentCooldown check based off of current attack speed
+        if (weaponData.Name != "Energy Drink" && currentCooldown <= 0f + weaponData.CooldownDuration - (weaponData.CooldownDuration / playerStats.CurrentAttackSpeed))
+        {
             Attack();
         }
         else if (currentCooldown <= 0f /*+ (weaponData.CooldownDuration / playerStats.CurrentAttackSpeed)*/) // Once cooldown becomes zero, attack
         {
             // UnityEngine.Debug.Log(currentCooldown);
+            
             Attack();
         }
+
+        // UnityEngine.Debug.Log("CooldownDuration = "+ weaponData.CooldownDuration + " || " + currentCooldown + " = currentCooldown. weaponData name is: " + weaponData.Name);
+        // UnityEngine.Debug.Log(currentCooldown + " = currentCooldown. ReducedCooldown = " + weaponData.CooldownDuration / playerStats.CurrentAttackSpeed);
     }
 
     protected virtual void Attack()

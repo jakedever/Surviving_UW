@@ -19,8 +19,7 @@ public class CharacterSelector : MonoBehaviour
         {
             Debug.LogWarning("Already an instance of CharacterSelector. Newest one deleted");
             Destroy(gameObject);
-        }
-        
+        }   
     } 
 
     public static CharacterScriptableObject GetData()
@@ -36,6 +35,6 @@ public class CharacterSelector : MonoBehaviour
     public void DestroySingleton()
     {
         instance = null;
-        Destroy(gameObject);
+        // Destroy(gameObject);
     }
 }

@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 350e3a5ea87a14c208b92c6ab61930da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8240376705133428952
+    second: Omar Walk Cycle_0
+  - first:
+      213: -7598074552233459818
+    second: Omar Walk Cycle_1
+  - first:
+      213: -4200767150701370682
+    second: Omar Walk Cycle_2
+  - first:
+      213: 8014853439113966321
+    second: Omar Walk Cycle_3
+  - first:
+      213: 5519908089174491455
+    second: Omar Walk Cycle_4
+  - first:
+      213: -5393465541939909023
+    second: Omar Walk Cycle_5
+  - first:
+      213: 9048127014507508857
+    second: Omar Walk Cycle_6
+  - first:
+      213: -7281460402569481675
+    second: Omar Walk Cycle_7
+  - first:
+      213: 1039753951463097771
+    second: Omar Walk Cycle_8
+  - first:
+      213: 1949304698249178205
+    second: Omar Walk Cycle_9
+  - first:
+      213: 2859798487801391293
+    second: Omar Walk Cycle_10
+  - first:
+      213: -4761934659155467903
+    second: Omar Walk Cycle_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Omar Walk Cycle_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 15
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f3e1bcb0d44ad80800000000000000
+      internalID: -8240376705133428952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Omar Walk Cycle_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 15
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f703973773e8690800000000000000
+      internalID: -7598074552233459818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Omar Walk Cycle_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 15
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2a0567880e3b5c0800000000000000
+      internalID: -4200767150701370682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Omar Walk Cycle_3
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 15
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f2b4350dba7a3f60800000000000000
+      internalID: 8014853439113966321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Omar Walk Cycle_4
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 15
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f310d005927aa9c40800000000000000
+      internalID: 5519908089174491455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Omar Walk Cycle_5
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 15
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16eac585aaf8625b0800000000000000
+      internalID: -5393465541939909023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Omar Walk Cycle_6
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 15
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 974f556a497619d70800000000000000
+      internalID: 9048127014507508857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Omar Walk Cycle_7
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 15
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 532f5cab75e03fa90800000000000000
+      internalID: -7281460402569481675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Omar Walk Cycle_8
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 15
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba544c2c5b2fd6e00800000000000000
+      internalID: 1039753951463097771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Omar Walk Cycle_9
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 15
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c64229b425d0b10800000000000000
+      internalID: 1949304698249178205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Omar Walk Cycle_10
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 15
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8e992a29b00b720800000000000000
+      internalID: 2859798487801391293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Omar Walk Cycle_11
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 15
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 181ea6548a53aedb0800000000000000
+      internalID: -4761934659155467903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Omar Walk Cycle_0: -8240376705133428952
+      Omar Walk Cycle_1: -7598074552233459818
+      Omar Walk Cycle_10: 2859798487801391293
+      Omar Walk Cycle_11: -4761934659155467903
+      Omar Walk Cycle_2: -4200767150701370682
+      Omar Walk Cycle_3: 8014853439113966321
+      Omar Walk Cycle_4: 5519908089174491455
+      Omar Walk Cycle_5: -5393465541939909023
+      Omar Walk Cycle_6: 9048127014507508857
+      Omar Walk Cycle_7: -7281460402569481675
+      Omar Walk Cycle_8: 1039753951463097771
+      Omar Walk Cycle_9: 1949304698249178205
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

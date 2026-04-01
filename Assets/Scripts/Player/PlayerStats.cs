@@ -22,6 +22,7 @@ public class PlayerStats : MonoBehaviour
     public float currentAttackSpeed = 1f;
     float currentProjectileSpeed;
     float currentMagnet;
+    Animator animator;
 
     #region Current Stats Properties
     public float CurrentHealth
@@ -178,6 +179,7 @@ public class PlayerStats : MonoBehaviour
         CharacterSelector.instance.DestroySingleton();
 
         inventory = GetComponent<InventoryManager>();
+        animator = characterData.animation;
 
         CurrentHealth = characterData.MaxHealth;
         CurrentRecovery = characterData.Recovery;

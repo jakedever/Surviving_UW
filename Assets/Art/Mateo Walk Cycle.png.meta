@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 720d4acbaf47945c4bfdafee48b429b5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1584661400470071772
+    second: Mateo Walk Cycle_0
+  - first:
+      213: -6895202384290095567
+    second: Mateo Walk Cycle_1
+  - first:
+      213: -7525994071244721055
+    second: Mateo Walk Cycle_2
+  - first:
+      213: -727312554252253463
+    second: Mateo Walk Cycle_3
+  - first:
+      213: 7266077643869681315
+    second: Mateo Walk Cycle_4
+  - first:
+      213: -8846732085862216185
+    second: Mateo Walk Cycle_5
+  - first:
+      213: -1216549958046792986
+    second: Mateo Walk Cycle_6
+  - first:
+      213: 7909259486147326608
+    second: Mateo Walk Cycle_7
+  - first:
+      213: -7196400959611416256
+    second: Mateo Walk Cycle_8
+  - first:
+      213: -4077963810051901684
+    second: Mateo Walk Cycle_9
+  - first:
+      213: 5986734040634733274
+    second: Mateo Walk Cycle_10
+  - first:
+      213: -133698500825168338
+    second: Mateo Walk Cycle_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mateo Walk Cycle_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 15
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42655b72ad6220ae0800000000000000
+      internalID: -1584661400470071772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mateo Walk Cycle_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 15
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13e56fdb6f15f40a0800000000000000
+      internalID: -6895202384290095567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mateo Walk Cycle_2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 15
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16433c1444c4e8790800000000000000
+      internalID: -7525994071244721055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mateo Walk Cycle_3
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 15
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6cc1bd51118e5f0800000000000000
+      internalID: -727312554252253463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mateo Walk Cycle_4
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 15
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a67249ae1b46d460800000000000000
+      internalID: 7266077643869681315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mateo Walk Cycle_5
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 15
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ec1273a081a3580800000000000000
+      internalID: -8846732085862216185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mateo Walk Cycle_6
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 15
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e2ca1b3242fd1fe0800000000000000
+      internalID: -1216549958046792986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mateo Walk Cycle_7
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 15
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 092333cf89553cd60800000000000000
+      internalID: 7909259486147326608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mateo Walk Cycle_8
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 15
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 041d415947f312c90800000000000000
+      internalID: -7196400959611416256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mateo Walk Cycle_9
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 15
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0735fe45892867c0800000000000000
+      internalID: -4077963810051901684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mateo Walk Cycle_10
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 15
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2b5c014e6251350800000000000000
+      internalID: 5986734040634733274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mateo Walk Cycle_11
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 15
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26405ffbe1052ef0800000000000000
+      internalID: -133698500825168338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mateo Walk Cycle_0: -1584661400470071772
+      Mateo Walk Cycle_1: -6895202384290095567
+      Mateo Walk Cycle_10: 5986734040634733274
+      Mateo Walk Cycle_11: -133698500825168338
+      Mateo Walk Cycle_2: -7525994071244721055
+      Mateo Walk Cycle_3: -727312554252253463
+      Mateo Walk Cycle_4: 7266077643869681315
+      Mateo Walk Cycle_5: -8846732085862216185
+      Mateo Walk Cycle_6: -1216549958046792986
+      Mateo Walk Cycle_7: 7909259486147326608
+      Mateo Walk Cycle_8: -7196400959611416256
+      Mateo Walk Cycle_9: -4077963810051901684
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
