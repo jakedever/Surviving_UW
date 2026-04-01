@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d54c8a6a12c341e5bd7b50b9b78b129, type: 3}
-  m_Name: JessicaCharacter
+  m_Name: CynCharacter
   m_EditorClassIdentifier: 
   icon: {fileID: -2145171368, guid: 864b23439e2c545a28e67587b5db992a, type: 3}
-  name: Jessica
+  name: Cyn
   startingWeapon: {fileID: 3454652056421076342, guid: 7befb929321124a0b83999f2a7571de0, type: 3}
   maxHealth: 1005
   recovery: 1
