@@ -45,6 +45,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WrenchController
   weaponData: {fileID: 11400000, guid: 50d6e13390cfb274ca82eefe202268c7, type: 2}
-  direction: {x: 0, y: 0, z: 0}
-  destroyAfterSeconds: 1
-  currentMiscellaneous: 0
