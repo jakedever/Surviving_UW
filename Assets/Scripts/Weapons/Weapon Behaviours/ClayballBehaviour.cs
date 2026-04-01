@@ -25,11 +25,11 @@ public class ClayballBehaviour : ProjectileWeaponBehaviour
         {
             EnemyStats enemy = col.GetComponent<EnemyStats>();
             enemy.TakeDamage(GetCurrentDamage()); // Make sure to use current damage incase modifiers
-            UnityEngine.Debug.Log(currentMiscellaneous);
+            // UnityEngine.Debug.Log(currentMiscellaneous);
             
             if (currentMiscellaneous > 0) // If there is still a level of spliting that needs to occur
             {
-                UnityEngine.Debug.Log(currentMiscellaneous);
+                // UnityEngine.Debug.Log(currentMiscellaneous);
                 currentMiscellaneous--;
                 clayballController.AttackAndSplit(direction, gameObject.transform, (int)currentMiscellaneous);
             }

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Snowball Weapon
   m_EditorClassIdentifier: Assembly-CSharp::WeaponScriptableObject
   prefab: {fileID: 9007794847796835720, guid: b2cdb5e4015eb43478dea23f72ec2527, type: 3}
+  additionalObjects:
+  - {fileID: 9012948901290368203, guid: b670633fa157846398b96cfac8cd3e89, type: 3}
   damage: 1
   speed: 5
   cooldownDuration: 6

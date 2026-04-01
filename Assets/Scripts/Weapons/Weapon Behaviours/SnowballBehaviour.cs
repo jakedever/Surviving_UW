@@ -4,9 +4,14 @@ using UnityEngine;
 public class SnowballBehaviour : ProjectileWeaponBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
+    public SnowballController snowballController;
+    public GameObject snowballAOE;
     protected override void Start()
     {
         base.Start();
+        snowballController = FindFirstObjectByType<SnowballController>();
+        snowballAOE = snowballController.weaponData.AdditionalObjects[0];
     }
 
     // Update is called once per frame
@@ -19,6 +24,7 @@ public class SnowballBehaviour : ProjectileWeaponBehaviour
     {   
         if (col.CompareTag("enemy"))   
         {
+            snowballController.SpawnAOE(col.GetComponent<Transform>().position);
             EnemyStats enemy = col.GetComponent<EnemyStats>();
             enemy.TakeDamage(GetCurrentDamage()); // Make sure to use current damage incase modifiers
 

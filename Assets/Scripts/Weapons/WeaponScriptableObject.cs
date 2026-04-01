@@ -9,6 +9,11 @@ public class WeaponScriptableObject : ScriptableObject // Scriptable Objects sav
     [SerializeField]
     GameObject prefab;
     public GameObject Prefab { get => prefab; private set => prefab = value; }
+
+    [SerializeField]
+    List<GameObject> additionalObjects;
+    public List<GameObject> AdditionalObjects { get => additionalObjects; private set => additionalObjects = value; }
+
     // Base Stats for Weapon
     [SerializeField]
     float damage;

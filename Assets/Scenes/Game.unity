@@ -8013,7 +8013,7 @@ MonoBehaviour:
   healthBar: {fileID: 1742305840}
   expBar: {fileID: 1918752774}
   levelText: {fileID: 1005064572}
-  secondWeapon: {fileID: 6056418862757660554, guid: e730b57e03ce140d8990ecd72c897b94, type: 3}
+  secondWeapon: {fileID: 7941060289164970699, guid: b1966db29d54e42c490230e9fe26b1fd, type: 3}
   firstPassiveItem: {fileID: 0}
   secondPassiveItem: {fileID: 0}
   invicibilityDuration: 0
