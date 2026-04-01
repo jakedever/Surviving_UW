@@ -23,6 +23,9 @@ public class WeaponScriptableObject : ScriptableObject // Scriptable Objects sav
     int pierce; // Max amount of time it can hit an enemy before being destroyed
     public int Pierce {get => pierce; private set => pierce = value; } 
     [SerializeField]
+    float miscellaneous; // Other shit we need to track
+    public float Miscellaneous {get => miscellaneous; private set => miscellaneous = value; } 
+    [SerializeField]
     int level;
     public int Level { get => level; private set => level = value;}
     [SerializeField]

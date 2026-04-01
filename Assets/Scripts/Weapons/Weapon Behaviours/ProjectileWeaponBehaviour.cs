@@ -6,7 +6,7 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
 {
 
     public WeaponScriptableObject weaponData;
-    protected Vector3 direction;
+    public Vector3 direction;
     public float destroyAfterSeconds;
 
     // Current Stats
@@ -14,6 +14,7 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
     protected float currentSpeed; 
     protected float currentCooldownDuration;
     protected int currentPierce;
+    public float currentMiscellaneous;
 
     private void Awake()
     {
@@ -21,11 +22,12 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
         currentSpeed = weaponData.Speed;
         currentCooldownDuration = weaponData.CooldownDuration;
         currentPierce = weaponData.Pierce;
+        currentMiscellaneous = weaponData.Miscellaneous;
     } 
 
     public float GetCurrentDamage()
     {
-        return currentDamage += FindObjectOfType<PlayerStats>().CurrentMight;
+        return currentDamage + FindObjectOfType<PlayerStats>().CurrentMight;
     }
 
     // Start is called before the first frame update
