@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543bcf8234fd145a3ad026baadc2ea04, type: 3}
+  m_Name: Snowball Weapon Level 5
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponScriptableObject
+  prefab: {fileID: 9007794847796835720, guid: b2cdb5e4015eb43478dea23f72ec2527, type: 3}
+  additionalObjects:
+  - {fileID: 9012948901290368203, guid: b670633fa157846398b96cfac8cd3e89, type: 3}
+  damage: 1
+  speed: 8
+  cooldownDuration: 5
+  pierce: 2
+  miscellaneous: 3
+  level: 5
+  nextLevelPrefab: {fileID: 0}
+  icon: {fileID: 21300000, guid: c04db0dadeec84d2096e0034a82f665a, type: 3}
+  name: "Snowball \u2014 5"
+  description: + 1 Pierce.

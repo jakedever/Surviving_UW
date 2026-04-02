@@ -10,17 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 543bcf8234fd145a3ad026baadc2ea04, type: 3}
-  m_Name: Knife Weapon Level 2
+  m_Name: Knife Weapon Level 1
   m_EditorClassIdentifier: 
   prefab: {fileID: 7816660883170427801, guid: 3e68c1747b34c45b9a4481187d7050aa, type: 3}
-  additionalObjects: []
   damage: 1
   speed: 9
-  cooldownDuration: 2.5
+  cooldownDuration: 3
   pierce: 1
-  miscellaneous: 0
-  level: 2
-  nextLevelPrefab: {fileID: 6711917544086058219, guid: f54ec65b3fe3d4b28b2cc5311d4852a2, type: 3}
+  level: 1
+  nextLevelPrefab: {fileID: 6711917544086058219, guid: 81f2d53ed711e4a7e8a174508b14700c, type: 3}
   icon: {fileID: -1262216586, guid: 864b23439e2c545a28e67587b5db992a, type: 3}
-  name: "Knife \u2014 2"
-  description: '- 0.5 cooldown duration.'
+  name: Knife
+  description: Throw a knife in the direction you are facing

@@ -29,7 +29,7 @@ public class EnemySpawner : MonoBehaviour
         public GameObject enemyPrefab; // Enemy Prefab
     }
 
-
+    public GameObject chris;
     public List<Wave> waves; 
     public int currentWaveCount; // index of the current wave (starts at 0)
 
@@ -51,6 +51,7 @@ public class EnemySpawner : MonoBehaviour
     {
         player = FindObjectOfType<PlayerStats>().transform;
         CalculateWaveQuota();
+        Invoke("SpawnChris", 60f);
     }
 
     // Update is called once per frame
@@ -70,6 +71,11 @@ public class EnemySpawner : MonoBehaviour
             SpawnEnemies();
         }
         
+    }
+
+    void SpawnChris()
+    {
+        Instantiate(chris);
     }
 
     IEnumerator BeginNextWave()

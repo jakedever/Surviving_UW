@@ -2466,6 +2466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b600b33e203f941f3ba1ab2fb528c0d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chris: {fileID: 6496017879386031212, guid: 7fa9b0c0fb193f44db8eee4973798a10, type: 3}
   waves:
   - waveName: Wave 1
     enemyGroups:
@@ -2510,6 +2511,32 @@ MonoBehaviour:
       enemyPrefab: {fileID: 7397034227268771249, guid: d67260302ef4a48ec90d5415cb330a64, type: 3}
     - enemyName: Dark Goose
       enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 7397034227268771249, guid: 9273ca86abceb48e5a88996228d780f2, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Goose
+      enemyCount: 15
+      spawnCount: 0
+      enemyPrefab: {fileID: 7397034227268771249, guid: d67260302ef4a48ec90d5415cb330a64, type: 3}
+    - enemyName: Dark Goose
+      enemyCount: 15
+      spawnCount: 0
+      enemyPrefab: {fileID: 7397034227268771249, guid: 9273ca86abceb48e5a88996228d780f2, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: Wave 6
+    enemyGroups:
+    - enemyName: Goose
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 7397034227268771249, guid: d67260302ef4a48ec90d5415cb330a64, type: 3}
+    - enemyName: Dark Goose
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 7397034227268771249, guid: 9273ca86abceb48e5a88996228d780f2, type: 3}
     waveQuota: 0
@@ -8393,7 +8420,7 @@ MonoBehaviour:
   levelRanges:
   - startLevel: 1
     endLevel: 10
-    experienceCapIncrease: 30
+    experienceCapIncrease: 20
   - startLevel: 11
     endLevel: 20
     experienceCapIncrease: 40

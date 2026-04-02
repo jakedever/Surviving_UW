@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 543bcf8234fd145a3ad026baadc2ea04, type: 3}
-  m_Name: Clayball Level 2
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 6839854684458350907, guid: 1dd8bf3eaf6a94e08b86ba38af7748ab, type: 3}
+  m_Name: Wrench Weapon Level 5
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponScriptableObject
+  prefab: {fileID: 1946500465487701758, guid: beb6d9abb010681469fc0e6be692d5ae, type: 3}
   additionalObjects: []
-  damage: 1
-  speed: 6
+  damage: 2
+  speed: 0
   cooldownDuration: 4
-  pierce: 1
+  pierce: 100
   miscellaneous: 2
   level: 1
-  nextLevelPrefab: {fileID: 1759147341430757374, guid: 03ff3c4d6d96b444c8dcbc4b66c300ee, type: 3}
-  icon: {fileID: 21300000, guid: 1a89aec265cbc4f5d8cc34a8f00b5e7c, type: 3}
-  name: "Clayball \u2014 2"
-  description: + 1 split.
+  nextLevelPrefab: {fileID: 0}
+  icon: {fileID: 21300000, guid: 9d47a4d66c46548478f3877c4bf53164, type: 3}
+  name: "Wrench \u2014 5"
+  description: '+ 1 damage. '

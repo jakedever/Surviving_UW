@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1759147341430757374
+--- !u!1 &6056418862757660554
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5511455926552853010}
-  - component: {fileID: 910350368124531419}
+  - component: {fileID: 9197898355271279794}
+  - component: {fileID: 7197786188996750982}
   m_Layer: 6
-  m_Name: Clayball Controller Level 2
+  m_Name: Energy Drink Controller Level 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5511455926552853010
+--- !u!4 &9197898355271279794
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1759147341430757374}
+  m_GameObject: {fileID: 6056418862757660554}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &910350368124531419
+--- !u!114 &7197786188996750982
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1759147341430757374}
+  m_GameObject: {fileID: 6056418862757660554}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7637fa7ff2b8049be9f2503d8d41ec5a, type: 3}
+  m_Script: {fileID: 11500000, guid: 983a2572761dd4766ba8a0fc68c5724c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  weaponData: {fileID: 11400000, guid: defff444c96a645818b9229d81c4aaea, type: 2}
+  m_EditorClassIdentifier: Assembly-CSharp::EnergyDrinkController
+  weaponData: {fileID: 11400000, guid: 50917bfea55974975a3d7c3b435cfd2a, type: 2}
