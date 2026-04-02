@@ -33,7 +33,7 @@ public class WeaponController : MonoBehaviour
         if (weaponData.Name != "Energy Drink")
         {
             // Speed up additionally based on current attack speed
-            UnityEngine.Debug.Log("Speeding cooldown progression up by an additional: " + (playerStats.currentAttackSpeed - 1));
+            // UnityEngine.Debug.Log("Speeding cooldown progression up by an additional: " + (playerStats.currentAttackSpeed - 1));
             currentCooldown -= Time.deltaTime * (playerStats.currentAttackSpeed - 1);
         }
 

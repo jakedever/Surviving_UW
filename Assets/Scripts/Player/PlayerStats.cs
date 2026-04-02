@@ -204,7 +204,7 @@ public class PlayerStats : MonoBehaviour
 
         // Pass starting weapon
         SpawnWeapon(characterData.StartingWeapon);
-        SpawnWeapon(secondWeapon); // Allows for manual attachment
+        // SpawnWeapon(secondWeapon); // Allows for manual attachment
 
         // SpawnPassiveItem(firstPassiveItem);
         // SpawnPassiveItem(secondPassiveItem);
