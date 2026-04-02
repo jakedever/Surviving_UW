@@ -8461,6 +8461,15 @@ MonoBehaviour:
   - weaponUpgradeIndex: 2
     initialWeapon: {fileID: 1759147341430757374, guid: 1089bd24c4f974b7ea4a3b143b6537b8, type: 3}
     weaponData: {fileID: 11400000, guid: 85322f187d50649149ea827963428404, type: 2}
+  - weaponUpgradeIndex: 3
+    initialWeapon: {fileID: 7941060289164970699, guid: b1966db29d54e42c490230e9fe26b1fd, type: 3}
+    weaponData: {fileID: 11400000, guid: 7e08ad4ac6fb640b49bc36ab27db5139, type: 2}
+  - weaponUpgradeIndex: 4
+    initialWeapon: {fileID: 1974245864668414393, guid: a5d408ff2842d9842916b9e7f521758f, type: 3}
+    weaponData: {fileID: 11400000, guid: 50d6e13390cfb274ca82eefe202268c7, type: 2}
+  - weaponUpgradeIndex: 5
+    initialWeapon: {fileID: 6056418862757660554, guid: e730b57e03ce140d8990ecd72c897b94, type: 3}
+    weaponData: {fileID: 11400000, guid: 948b0a40ca28d4cf198cfeba8a2373c3, type: 2}
   itemUpgradesOptions:
   - itemUpgradeIndex: 0
     initialItem: {fileID: 6121102438113364012, guid: 55f49561078924543a2e0f3cf3500a5d, type: 3}
