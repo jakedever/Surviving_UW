@@ -26,7 +26,7 @@ public class SnowballBehaviour : ProjectileWeaponBehaviour
         {
             snowballController.SpawnAOE(col.GetComponent<Transform>().position);
             EnemyStats enemy = col.GetComponent<EnemyStats>();
-            enemy.TakeDamage(GetCurrentDamage()); // Make sure to use current damage incase modifiers
+            enemy.TakeDamage(GetCurrentDamage(), transform.position); // Make sure to use current damage incase modifiers
 
             EnemyMovement em = col.GetComponent<EnemyMovement>(); // Add Coroutine to re-add movement component
             em.enabled = false;

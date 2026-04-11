@@ -9689,6 +9689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterData: {fileID: 0}
   currentAttackSpeed: 1
+  damageEffect: {fileID: 4245587053063902199, guid: ae963285fd1604dbcae812eefecefbc8, type: 3}
   experience: 0
   level: 1
   experienceCap: 0

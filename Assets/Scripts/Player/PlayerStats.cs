@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Unity.Jobs.LowLevel.Unsafe;
@@ -145,6 +146,9 @@ public class PlayerStats : MonoBehaviour
     }
 
     #endregion
+
+    public ParticleSystem damageEffect;
+
 
     // Experience Management
     [Header("Experience/Level")]
@@ -299,7 +303,7 @@ public class PlayerStats : MonoBehaviour
         }
         
         //Spawn starting weapon
-        GameObject spawnedWeapon = Instantiate(weapon, transform.position, Quaternion.identity);
+        GameObject spawnedWeapon = Instantiate(weapon, transform.position, UnityEngine.Quaternion.identity);
         spawnedWeapon.transform.SetParent(transform);
         inventory.AddWeapon(weaponIndex, spawnedWeapon.GetComponent<WeaponController>()); // Add the weapon to it's appropriate iventory slot
         Debug.Log("Added " + spawnedWeapon.name + " to character");
@@ -315,7 +319,7 @@ public class PlayerStats : MonoBehaviour
         }
         
         //Spawn starting weapon
-        GameObject spawnedItem = Instantiate(item, transform.position, Quaternion.identity);
+        GameObject spawnedItem = Instantiate(item, transform.position, UnityEngine.Quaternion.identity);
         spawnedItem.transform.SetParent(transform);
         inventory.AddPassiveItem(passiveItemsIndex, spawnedItem.GetComponent<PassiveItem>()); // Add the weapon to it's appropriate iventory slot
         Debug.Log("Added " + spawnedItem.name + " to character");
@@ -344,8 +348,11 @@ public class PlayerStats : MonoBehaviour
         if (!isInvincible)
         {
             isInvincible = true;
+
+            if (damageEffect) Instantiate(damageEffect, transform.position, UnityEngine.Quaternion.identity);
+
             CurrentHealth -= dmg;
-            invincibilityTimer = invicibilityDuration;
+            invincibilityTimer = invicibilityDuration;  
             
 
             Debug.Log("Player took " + dmg + " damage");

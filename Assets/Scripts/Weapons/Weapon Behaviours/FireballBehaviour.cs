@@ -23,7 +23,7 @@ public class FireballBehaviour : ProjectileWeaponBehaviour
         {
             fireballController.SpawnAOE(col.GetComponent<Transform>().position);
             EnemyStats enemy = col.GetComponent<EnemyStats>();
-            enemy.TakeDamage(GetCurrentDamage()); // Make sure to use current damage incase modifiers
+            enemy.TakeDamage(GetCurrentDamage(), transform.position); // Make sure to use current damage incase modifiers
 
             ReducePierce();
         }
