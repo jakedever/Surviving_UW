@@ -21,5 +21,5 @@ MonoBehaviour:
   moveSpeed: 5
   might: 1
   projectileSpeed: 3
-  magnet: 1
+  magnet: 1.6
   animation: {fileID: 0}

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: MateoCharacter
   m_EditorClassIdentifier: 
   icon: {fileID: 1782291140, guid: 864b23439e2c545a28e67587b5db992a, type: 3}
+  controller: {fileID: 22100000, guid: 70e79f4d393ea443c957c5dacf834bc4, type: 2}
   name: Mateo
   startingWeapon: {fileID: 6264697635562647585, guid: 7c9106214e734473993f98f768c94c3b, type: 3}
   maxHealth: 800
@@ -21,3 +22,4 @@ MonoBehaviour:
   might: 1
   projectileSpeed: 2
   magnet: 1.6
+  animation: {fileID: 0}
