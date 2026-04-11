@@ -174,6 +174,8 @@ public class PlayerStats : MonoBehaviour
     public Image expBar;
     public TMPro.TMP_Text levelText;
 
+    PlayerAnimator playerAnimator;
+
     public GameObject secondWeapon;
     public GameObject firstPassiveItem, secondPassiveItem;
 
@@ -191,6 +193,10 @@ public class PlayerStats : MonoBehaviour
         CurrentMight = characterData.Might;
         CurrentProjectileSpeed = characterData.ProjectileSpeed; 
         CurrentMagnet = characterData.Magnet;
+
+        playerAnimator = GetComponent<PlayerAnimator>();
+        playerAnimator.SetAnimatorController(characterData.controller);
+        // characterData.controller
 
     }
 

@@ -8,6 +8,8 @@ public class CharacterScriptableObject : ScriptableObject
     [SerializeField]
     Sprite icon;
     public Sprite Icon  { get => icon; set => icon = value; }
+
+    public RuntimeAnimatorController controller; 
     [SerializeField]
     new string name;
     public string Name { get => name; set => name = value; }
