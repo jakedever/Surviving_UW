@@ -6,16 +6,21 @@ public class ExperienceGem : Pickup
 {
 
     public int experienceGranted;
+
     public override void Collect()
     {
-        if (hasBeenCollected = true)
+        UnityEngine.Debug.Log(hasBeenCollected);
+        if (hasBeenCollected == true)
         {
+            UnityEngine.Debug.Log("Exits");
             return;
         }
         else
         {
             base.Collect();
         }
+
+        UnityEngine.Debug.Log("Adds experience");
         PlayerStats player = FindObjectOfType<PlayerStats>();
         player.IncreaseExperience(experienceGranted);
     }

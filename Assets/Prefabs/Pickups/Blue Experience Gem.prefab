@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4884f53a9828847f3af04e3c8fcd9d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasBeenCollected: 0
   experienceGranted: 30
 --- !u!50 &-4391132579588472203
 Rigidbody2D:

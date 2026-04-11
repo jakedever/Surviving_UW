@@ -56,9 +56,9 @@ public class GameManager : MonoBehaviour
     {
         if (instance == null)
         {
-            Debug.Log("GameManager should be instantiated");
+            // Debug.Log("GameManager should be instantiated");
             instance = this;
-            Debug.Log(instance == null);
+            // Debug.Log(instance == null);
         }
         else
         {
