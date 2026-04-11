@@ -27,18 +27,18 @@ public class GameManager : MonoBehaviour
     public GameObject levelUpScreen;
 
     [Header("Current Display Values")]  
-    public Text currentHealthDisplay;
-    public Text currentRecoveryDisplay;
-    public Text currentMovespeedDisplay;
-    public Text currentMightDisplay;  
-    public Text currentProjectileSpeedDisplay;
-    public Text currentMagnetDisplay;
+    public TMPro.TMP_Text currentHealthDisplay;
+    public TMPro.TMP_Text currentRecoveryDisplay;
+    public TMPro.TMP_Text currentMovespeedDisplay;
+    public TMPro.TMP_Text currentMightDisplay;  
+    public TMPro.TMP_Text currentProjectileSpeedDisplay;
+    public TMPro.TMP_Text currentMagnetDisplay;
 
     [Header("Results Screen Displays")]
     public Image chosenCharacterImage;
-    public Text chosenCharacterName;
-    public Text levelReachedDisplay;
-    public Text timeSurvivedDisplay;
+    public TMPro.TMP_Text chosenCharacterName;
+    public TMPro.TMP_Text levelReachedDisplay;
+    public TMPro.TMP_Text timeSurvivedDisplay;
     public List<Image> chosenWeaponsUI = new List<Image>(6);
     public List<Image> chosenItemsUI = new List<Image>(6);
 
@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
     [Header("Stopwatch")]
     public float timeLimit; // the time limit in seconds
     float stopwatchTime; // Current time since beginning of game
-    public Text stopwatchDisplay;
+    public TMPro.TMP_Text stopwatchDisplay;
     // Reference to the player's game object
     public GameObject playerObject;
     void Awake()
@@ -213,8 +213,7 @@ public class GameManager : MonoBehaviour
 
         if (stopwatchTime >= timeLimit)
         {
-            // Debug.Log("Time is up");
-            GameOver();
+            playerObject.SendMessage("Kill");            
         }
     }
     void UpdateStopwatchDisplay()
