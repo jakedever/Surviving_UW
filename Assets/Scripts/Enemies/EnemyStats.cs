@@ -58,7 +58,11 @@ public class EnemyStats : MonoBehaviour
     {
         currentHealth -= dmg;
         StartCoroutine(DamageFlash());
-        // Debug.Log("Enemy took " + dmg + " damage");
+
+        if (dmg > 0)
+        {
+            GameManager.GenerateFloatingText(Mathf.FloorToInt(dmg).ToString(), transform);
+        }
 
         if (knockbackForce > 0)
         {
