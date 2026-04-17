@@ -21,24 +21,24 @@ public class PropRandomizer : MonoBehaviour
     void DetermineSpawnPattern()
     {
         spawnPattern = propSpawnPatterns[Random.Range(0, propSpawnPatterns.Count)];
-        UnityEngine.Debug.Log(spawnPattern);
+        // UnityEngine.Debug.Log(spawnPattern);
 
         propSpawnPoints = new List<Transform>();
         for (int i = 0; i < spawnPattern.transform.childCount; i++)
         {
             Transform child = spawnPattern.transform.GetChild(i);
             propSpawnPoints.Add(child);
-            UnityEngine.Debug.Log("Child " + i + ": " + child.name + " at " + child.position);
+            // UnityEngine.Debug.Log("Child " + i + ": " + child.name + " at " + child.position);
         }
     }
     void SpawnProps()
     {
         foreach (Transform sp in propSpawnPoints)
         {
-            UnityEngine.Debug.Log(sp.position);
+            // UnityEngine.Debug.Log(sp.position);
             int rand = Random.Range(0, propPrefabs.Count);
             GameObject prop = Instantiate(propPrefabs[rand], sp.position, Quaternion.identity, sp);
-            UnityEngine.Debug.Log("Spawned Prop");
+            // UnityEngine.Debug.Log("Spawned Prop");
         }
     }
 }

@@ -1152,6 +1152,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2936582504802114282, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
+      propertyPath: chunkY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936582504802114282, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
       propertyPath: flipped
       value: 1
       objectReference: {fileID: 0}
@@ -1167,6 +1171,11 @@ PrefabInstance:
 --- !u!4 &261065792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1228514762358908638, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
+  m_PrefabInstance: {fileID: 261065791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &261065793 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4229864159658866164, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
   m_PrefabInstance: {fileID: 261065791}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &263496367
@@ -2756,11 +2765,19 @@ MonoBehaviour:
   terrainChunks:
   - {fileID: 4229864159658866164, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
   player: {fileID: 1963704551}
-  checkerRadius: 0
+  checkerRadius: -10
   terrainMask:
     serializedVersion: 2
     m_Bits: 1024
   currentChunk: {fileID: 0}
+  currentChunkYValue: 0
+  spawnedChunks:
+  - {fileID: 7216226145184586818}
+  - {fileID: 1845796749}
+  - {fileID: 261065793}
+  - {fileID: 916770722}
+  maxOptimizationDistance: 20
+  optimizerCooldownDuration: 1
 --- !u!1 &624915340
 GameObject:
   m_ObjectHideFlags: 0
@@ -4941,6 +4958,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2936582504802114282, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
+      propertyPath: chunkY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936582504802114282, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
       propertyPath: flipped
       value: 1
       objectReference: {fileID: 0}
@@ -4956,6 +4977,11 @@ PrefabInstance:
 --- !u!4 &916770721 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1228514762358908638, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
+  m_PrefabInstance: {fileID: 916770720}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &916770722 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4229864159658866164, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
   m_PrefabInstance: {fileID: 916770720}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &940934313
@@ -7701,7 +7727,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: 160}
+  m_AnchoredPosition: {x: 45.4, y: 181.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663650736
@@ -8875,6 +8901,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2936582504802114282, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
+      propertyPath: chunkY
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4229864159658866164, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
       propertyPath: m_Name
       value: Area 1 Chunk 2
@@ -8884,6 +8914,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
+--- !u!1 &1845796749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4229864159658866164, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
+  m_PrefabInstance: {fileID: 1845796748}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1852546919
 GameObject:
   m_ObjectHideFlags: 0
@@ -11095,6 +11130,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2936582504802114282, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
+      propertyPath: chunkY
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4229864159658866164, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
       propertyPath: m_Name
       value: Area 1 Chunk 1
@@ -11104,6 +11143,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
+--- !u!1 &7216226145184586818 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4229864159658866164, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
+  m_PrefabInstance: {fileID: 7216226145184586817}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
