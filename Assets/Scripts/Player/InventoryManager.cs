@@ -255,6 +255,7 @@ public class InventoryManager : MonoBehaviour
                 }
             }
         }
+        LayoutRebuilder.ForceRebuildLayoutImmediate(upgradeUIOptions[0].upgradeNameDisplay.transform.parent.GetComponent<RectTransform>());
     }
     void RemoveUpgradeOptions ()
     {
