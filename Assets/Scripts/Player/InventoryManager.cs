@@ -157,10 +157,6 @@ public class InventoryManager : MonoBehaviour
                 UnityEngine.Debug.Log(choosenWeaponUpgrade.weaponData.Name);
 
                 availableWeaponUpgrades.Remove(choosenWeaponUpgrade); // Remove chosen upgrade from available upgrades for this UI
-                for (int i = 0; i < availableWeaponUpgrades.Count; i++)
-                {
-                    UnityEngine.Debug.Log(availableWeaponUpgrades[i].weaponData.Name);
-                }
 
                 if (choosenWeaponUpgrade != null) 
                 {
@@ -173,7 +169,7 @@ public class InventoryManager : MonoBehaviour
                         UnityEngine.Debug.Log("Is " + (weaponSlots[i] == null ? "NULL" : weaponSlots[i].weaponData.Name + " id:" + weaponSlots[i].weaponData.Id) +
                         " = " + (choosenWeaponUpgrade.weaponData == null ? "NULL" : choosenWeaponUpgrade.weaponData.Name + " id:" + choosenWeaponUpgrade.weaponData.Id));
                         
-                        if (weaponSlots[i] != null && availableWeaponUpgrades[i].weaponData.Id == choosenWeaponUpgrade.weaponData.Id)
+                        if (weaponSlots[i] != null && weaponSlots[i].weaponData.Id == choosenWeaponUpgrade.weaponData.Id)
                         {
                             UnityEngine.Debug.Log("Found Item already in Player inventory, serving an upgraded one");
                             newWeapon = false;
