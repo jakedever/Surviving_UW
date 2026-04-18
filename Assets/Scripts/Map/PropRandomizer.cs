@@ -37,7 +37,8 @@ public class PropRandomizer : MonoBehaviour
         {
             // UnityEngine.Debug.Log(sp.position);
             int rand = Random.Range(0, propPrefabs.Count);
-            GameObject prop = Instantiate(propPrefabs[rand], sp.position, Quaternion.identity, sp);
+            GameObject prop = Instantiate(propPrefabs[rand], sp.position, Quaternion.identity);
+            prop.transform.SetParent(sp); // Parent it after instantiation
             // UnityEngine.Debug.Log("Spawned Prop");
         }
     }

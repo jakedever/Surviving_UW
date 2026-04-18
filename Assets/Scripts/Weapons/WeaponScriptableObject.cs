@@ -45,4 +45,7 @@ public class WeaponScriptableObject : ScriptableObject // Scriptable Objects sav
     [SerializeField]
     string description;
     public string Description { get => description; private set => description = value; }
+    [SerializeField]
+    int id;
+    public int Id { get => id; private set => id = value; }
 }

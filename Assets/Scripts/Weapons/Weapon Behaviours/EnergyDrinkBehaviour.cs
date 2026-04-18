@@ -6,18 +6,18 @@ public class EnergyDrinkBehaviour : MeleeWeaponBehaviour
     protected override void Start()
     {
         base.Start();
-        UnityEngine.Debug.Log("Energy Drink Start()");
+        // UnityEngine.Debug.Log("Energy Drink Start()");
         ChangeAttackSpeed(currentMiscellaneous);
     }
 
     private void OnDestroy() {
-        UnityEngine.Debug.Log("Energy Drink OnDestroy()");
+        // UnityEngine.Debug.Log("Energy Drink OnDestroy()");
         ChangeAttackSpeed(-currentMiscellaneous);
     }
 
     protected void ChangeAttackSpeed(float amount)
     {
-        UnityEngine.Debug.Log("Changed attack speed by amount " + amount);
+        // UnityEngine.Debug.Log("Changed attack speed by amount " + amount);
         if (amount > 0)
         {
             playerStats.CurrentAttackSpeed *= amount;

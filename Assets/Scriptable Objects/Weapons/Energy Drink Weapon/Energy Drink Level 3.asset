@@ -20,7 +20,8 @@ MonoBehaviour:
   pierce: 1
   miscellaneous: 2
   level: 3
-  nextLevelPrefab: {fileID: 6056418862757660554, guid: 694bda8a1cd704dba94c437dd3faa694, type: 3}
+  nextLevelPrefab: {fileID: 6056418862757660554, guid: b43de6ac43d0447e08c4314162d48a2b, type: 3}
   icon: {fileID: -1867840808, guid: 4067920bf5cca48d4ade68067bd41c19, type: 3}
   name: "Energy Drink \u2014 3"
-  description: -0.5 Cooldown Duration.
+  description: '- 0.5 Cooldown Duration.'
+  id: 1

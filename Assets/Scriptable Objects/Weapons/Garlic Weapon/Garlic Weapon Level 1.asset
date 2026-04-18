@@ -24,3 +24,4 @@ MonoBehaviour:
   icon: {fileID: 1675260323, guid: 864b23439e2c545a28e67587b5db992a, type: 3}
   name: Tie Swing
   description: 'Deal damage in an area surrounding you '
+  id: 4

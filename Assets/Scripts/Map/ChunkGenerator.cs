@@ -24,7 +24,7 @@ public class ChunkGenerator : MonoBehaviour
 
     void GenerateChunk ()
     {   
-        UnityEngine.Debug.Log("Spawned chunk at " + gameObject.transform.localPosition);
+        // UnityEngine.Debug.Log("Spawned chunk at " + gameObject.transform.localPosition);
         GameObject dirtTilemap = Instantiate(dirtTilemaps[Random.Range(0, dirtTilemaps.Count)], transform);
         dirtTilemap.transform.position += new UnityEngine.Vector3 (5, 1, 0);
 

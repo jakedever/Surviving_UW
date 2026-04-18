@@ -155,8 +155,8 @@ public class GameManager : MonoBehaviour
             tmPro.color = new UnityEngine.Color(tmPro.color.r, tmPro.color.g, tmPro.color.b, 1 - t / duration);
 
             // For panning up
-            yOffset += speed * Time.deltaTime;
-            rect.position = referenceCamera.WorldToScreenPoint(target.position + new UnityEngine.Vector3(0, yOffset));
+            // yOffset += speed * Time.deltaTime;
+            // rect.position = referenceCamera.WorldToScreenPoint(target.position + new UnityEngine.Vector3(0, yOffset));
         }
     }
     

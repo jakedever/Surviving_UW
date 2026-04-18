@@ -44,9 +44,9 @@ public class InventoryManager : MonoBehaviour
         public Button upgradeButton;
     }
 
-    public List<WeaponUpgrade> weaponUpgradesOptions = new List<WeaponUpgrade>();
-    public List<ItemUpgrade> itemUpgradesOptions = new List<ItemUpgrade>();
-    public List<UpgradeUI> upgradeUIOptions = new List<UpgradeUI>();
+    public List<WeaponUpgrade> weaponUpgradesOptions = new List<WeaponUpgrade>(); // All options for weapon upgrades
+    public List<ItemUpgrade> itemUpgradesOptions = new List<ItemUpgrade>(); // All options for passive item upgrades
+    public List<UpgradeUI> upgradeUIOptions = new List<UpgradeUI>(); // Dynamic list of upgrades offer for the level
     PlayerStats player;
 
     void Start()
@@ -128,10 +128,9 @@ public class InventoryManager : MonoBehaviour
 
         foreach (var upgradeOptions in upgradeUIOptions) // For each upgrade option available in the UI
         {
-
-
             if(availableWeaponUpgrades.Count == 0 && availableItemUpgrades.Count == 0)
             {
+                DisableUpgradeUI(upgradeOptions);
                 return;
             }
 
@@ -139,15 +138,15 @@ public class InventoryManager : MonoBehaviour
 
             if(availableWeaponUpgrades.Count == 0)
             {
-                upgradeType = 1;
+                upgradeType = 2;
             }
             else if (availableItemUpgrades.Count == 0)
             {
-                upgradeType = 2;
+                upgradeType = 1;
             }
             else
             {
-                upgradeType = Random.Range(1, 3); // Randomly choose between weapons and items
+                upgradeType = Random.Range(1, 3); // Randomly choose between weapons and items (1 or 2)
             }
             
             
@@ -155,42 +154,55 @@ public class InventoryManager : MonoBehaviour
             {
                 // If it randomly picks upgradeType == 1 (a weapon), get a random weapon
                 WeaponUpgrade choosenWeaponUpgrade = availableWeaponUpgrades[Random.Range(0, availableWeaponUpgrades.Count)];
+                UnityEngine.Debug.Log(choosenWeaponUpgrade.weaponData.Name);
 
-                availableWeaponUpgrades.Remove(choosenWeaponUpgrade);
+                availableWeaponUpgrades.Remove(choosenWeaponUpgrade); // Remove chosen upgrade from available upgrades for this UI
+                for (int i = 0; i < availableWeaponUpgrades.Count; i++)
+                {
+                    UnityEngine.Debug.Log(availableWeaponUpgrades[i].weaponData.Name);
+                }
 
                 if (choosenWeaponUpgrade != null) 
                 {
 
                     EnableUpgradeUI(upgradeOptions);
-                    bool newWeapon = false;
+                    bool newWeapon = true;
+
                     for (int i = 0; i < weaponSlots.Count; i++)
                     {
-                        if (weaponSlots[i] != null && weaponSlots[i].weaponData == choosenWeaponUpgrade.weaponData)
+                        UnityEngine.Debug.Log("Is " + (weaponSlots[i] == null ? "NULL" : weaponSlots[i].weaponData.Name + " id:" + weaponSlots[i].weaponData.Id) +
+                        " = " + (choosenWeaponUpgrade.weaponData == null ? "NULL" : choosenWeaponUpgrade.weaponData.Name + " id:" + choosenWeaponUpgrade.weaponData.Id));
+                        
+                        if (weaponSlots[i] != null && availableWeaponUpgrades[i].weaponData.Id == choosenWeaponUpgrade.weaponData.Id)
                         {
-                            // Debug.Log("Found Item already in Player inventory, serving an upgraded one");
+                            UnityEngine.Debug.Log("Found Item already in Player inventory, serving an upgraded one");
                             newWeapon = false;
+
                             if (!newWeapon)
                             {
-                                if (!choosenWeaponUpgrade.weaponData.NextLevelPrefab)
+                                if (!weaponSlots[i].weaponData.NextLevelPrefab) // If there isn't another level after that, call again
                                 {
+                                    UnityEngine.Debug.Log("No next level prefab, exiting function");
                                     DisableUpgradeUI(upgradeOptions);
                                     break;
                                 }
 
-
                                 upgradeOptions.upgradeButton.onClick.AddListener(() => LevelUpWeapon(i, choosenWeaponUpgrade.weaponUpgradeIndex)); // Dynamically does events??
                                 upgradeOptions.upgradeDescriptionDisplay.text = choosenWeaponUpgrade.weaponData.NextLevelPrefab.GetComponent<WeaponController>().weaponData.Description;
                                 upgradeOptions.upgradeNameDisplay.text = choosenWeaponUpgrade.weaponData.NextLevelPrefab.GetComponent<WeaponController>().weaponData.Name;
+                                
                             }
                             break;
                         }
                         else
                         {
+                            UnityEngine.Debug.Log("Weapon not already present in player's inventory: newWeapon = " + newWeapon);
                             newWeapon = true;
                         }   
                     }
                     if(newWeapon) // Spawn the new weapon
                     {
+                        UnityEngine.Debug.Log("newWeapon = true, spawning new weapon");
                         upgradeOptions.upgradeButton.onClick.AddListener(() => player.SpawnWeapon(choosenWeaponUpgrade.initialWeapon));
                         upgradeOptions.upgradeDescriptionDisplay.text = choosenWeaponUpgrade.weaponData.Description;
                         upgradeOptions.upgradeNameDisplay.text = choosenWeaponUpgrade.weaponData.Name;
@@ -203,6 +215,7 @@ public class InventoryManager : MonoBehaviour
             else if (upgradeType == 2)
             {
                 ItemUpgrade choosenItemUpgrade = availableItemUpgrades[Random.Range(0, availableItemUpgrades.Count)];
+                UnityEngine.Debug.Log(choosenItemUpgrade.itemData.Name);
 
                 availableItemUpgrades.Remove(choosenItemUpgrade);
 

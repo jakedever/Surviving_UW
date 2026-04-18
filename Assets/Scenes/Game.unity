@@ -1163,6 +1163,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area 1 Chunk 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8850586523008263159, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2744,7 +2748,7 @@ Transform:
   m_GameObject: {fileID: 623469518}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.23783483, y: 1.2190582, z: -0.02625354}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4968,6 +4972,10 @@ PrefabInstance:
     - target: {fileID: 4229864159658866164, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
       propertyPath: m_Name
       value: Area 1 Chunk 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8850586523008263159, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7725,9 +7733,9 @@ RectTransform:
   - {fileID: 1329252883}
   m_Father: {fileID: 1556570297}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 45.4, y: 181.1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 45.4, y: -60.899994}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663650736
@@ -8909,6 +8917,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area 1 Chunk 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8850586523008263159, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9939,8 +9951,8 @@ MonoBehaviour:
   - {fileID: 1329252884}
   weaponUpgradesOptions:
   - weaponUpgradeIndex: 0
-    initialWeapon: {fileID: 6711917544086058219, guid: 1200248112acf4d3b83fe0ba694c9257, type: 3}
-    weaponData: {fileID: 11400000, guid: 2f2f9cd0dc65249a6a5fecb1c62188a2, type: 2}
+    initialWeapon: {fileID: 33079089540365795, guid: c38dfc5916e83413899556f7d8aa29f0, type: 3}
+    weaponData: {fileID: 11400000, guid: c77f6daaa87e9426da2dfcc93ae3a964, type: 2}
   - weaponUpgradeIndex: 1
     initialWeapon: {fileID: 6264697635562647585, guid: 7c9106214e734473993f98f768c94c3b, type: 3}
     weaponData: {fileID: 11400000, guid: 53819aae285384c358a9fbe1c3778a74, type: 2}
@@ -11137,6 +11149,10 @@ PrefabInstance:
     - target: {fileID: 4229864159658866164, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
       propertyPath: m_Name
       value: Area 1 Chunk 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8850586523008263159, guid: a39ac4c58c56a460aae17444aad7baad, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

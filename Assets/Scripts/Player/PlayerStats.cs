@@ -302,7 +302,7 @@ public class PlayerStats : MonoBehaviour
     }
     public void SpawnWeapon(GameObject weapon)
     {
-        if(weaponIndex >= inventory.weaponSlots.Count - 1)
+        if(weaponIndex >= inventory.weaponSlots.Count)
         {
             Debug.LogError("Inventory slot already full");
             return; 
@@ -312,13 +312,13 @@ public class PlayerStats : MonoBehaviour
         GameObject spawnedWeapon = Instantiate(weapon, transform.position, UnityEngine.Quaternion.identity);
         spawnedWeapon.transform.SetParent(transform);
         inventory.AddWeapon(weaponIndex, spawnedWeapon.GetComponent<WeaponController>()); // Add the weapon to it's appropriate iventory slot
-        Debug.Log("Added " + spawnedWeapon.name + " to character");
+        // Debug.Log("Added " + spawnedWeapon.name + " to character");
 
         weaponIndex++;
     }
     public void SpawnPassiveItem(GameObject item)
     {
-        if(passiveItemsIndex >= inventory.passiveItemSlots.Count - 1)
+        if(passiveItemsIndex >= inventory.passiveItemSlots.Count)
         {
             Debug.LogError("Passive item slot already full");
             return; 

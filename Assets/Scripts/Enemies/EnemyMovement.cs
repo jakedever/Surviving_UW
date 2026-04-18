@@ -20,7 +20,9 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (knockbackDuration > 0)
+        if (gameObject)
+        {
+            if (knockbackDuration > 0)
         {
             transform.position += (UnityEngine.Vector3)knockbackVelocity * Time.deltaTime;
             knockbackDuration -= Time.deltaTime;
@@ -29,6 +31,7 @@ public class EnemyMovement : MonoBehaviour
         else 
         {
             transform.position = UnityEngine.Vector2.MoveTowards(transform.position, player.transform.position, enemy.currentMoveSpeed * Time.deltaTime);
+        }   
         }
     }
 
