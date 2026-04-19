@@ -15,7 +15,7 @@ MonoBehaviour:
   icon: {fileID: 615513247, guid: 864b23439e2c545a28e67587b5db992a, type: 3}
   controller: {fileID: 22100000, guid: 48f402140dcd54c4881cbcbb25060402, type: 2}
   name: Omar
-  startingWeapon: {fileID: 6711917544086058219, guid: 1200248112acf4d3b83fe0ba694c9257, type: 3}
+  startingWeapon: {fileID: 1974245864668414393, guid: a5d408ff2842d9842916b9e7f521758f, type: 3}
   maxHealth: 1000
   recovery: 1
   moveSpeed: 5

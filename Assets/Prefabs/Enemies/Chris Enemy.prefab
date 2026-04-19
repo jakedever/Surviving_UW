@@ -306,3 +306,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e480397a58a7d8847b8e8b01f42aa5bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChrisDeath
+  soundEffectManager: {fileID: 1333803825165721488, guid: 62512b79769fe4a3aaad89e5f183e526, type: 3}

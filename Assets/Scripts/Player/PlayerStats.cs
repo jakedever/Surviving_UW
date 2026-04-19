@@ -176,6 +176,7 @@ public class PlayerStats : MonoBehaviour
 
     PlayerAnimator playerAnimator;
 
+    public SoundEffectManager sfxM;
     public GameObject secondWeapon;
     public GameObject firstPassiveItem, secondPassiveItem;
 
@@ -186,6 +187,7 @@ public class PlayerStats : MonoBehaviour
 
         inventory = GetComponent<InventoryManager>();
         animator = characterData.animation;
+        sfxM = FindObjectOfType<SoundEffectManager>();    
 
         CurrentHealth = characterData.MaxHealth;
         CurrentRecovery = characterData.Recovery;
@@ -236,6 +238,11 @@ public class PlayerStats : MonoBehaviour
         {
              isInvincible = false;
         }
+        if (soundEffectTimer > 0)
+        {
+            soundEffectTimer -= Time.deltaTime;
+        }
+
 
         Recover();
 
@@ -276,6 +283,8 @@ public class PlayerStats : MonoBehaviour
     [Header("I-Frames")]
     public float invicibilityDuration = 1; 
     float invincibilityTimer;
+    float soundEffectDelay = 0.5f;
+    float soundEffectTimer;
     bool isInvincible;
     public void RestoreHealth(int amount)
     {
@@ -350,6 +359,12 @@ public class PlayerStats : MonoBehaviour
     }
     public void TakeDamage(float dmg)
     {
+        if (soundEffectTimer <= 0)
+        {
+            PlayHurtSound();
+            soundEffectTimer = soundEffectDelay;
+        }
+        
         // If the player is not current invincible, take damage
         if (!isInvincible)
         {
@@ -358,10 +373,10 @@ public class PlayerStats : MonoBehaviour
             if (damageEffect) Instantiate(damageEffect, transform.position, UnityEngine.Quaternion.identity);
 
             CurrentHealth -= dmg;
+
             invincibilityTimer = invicibilityDuration;  
             
-
-            Debug.Log("Player took " + dmg + " damage");
+            // Debug.Log("Player took " + dmg + " damage");
         }
         
         if (CurrentHealth <= 0)
@@ -370,6 +385,22 @@ public class PlayerStats : MonoBehaviour
         }
 
         UpdateHealthBar();
+    }
+
+    public void PlayHurtSound()
+    {
+        if (characterData.Name == "Omar")
+        {
+            sfxM.PlaySound("Omar Damage");
+        }
+        else if (characterData.Name == "Mateo")
+        {
+            sfxM.PlaySound("Mateo Damage");
+        }
+        if (characterData.Name == "Cyn")
+        {
+            sfxM.PlaySound("Cyn Damage");
+        }
     }
     public void Kill()
     {
