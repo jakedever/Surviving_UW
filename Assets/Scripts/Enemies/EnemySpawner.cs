@@ -52,7 +52,7 @@ public class EnemySpawner : MonoBehaviour
     {
         player = FindObjectOfType<PlayerStats>().transform;
         CalculateWaveQuota();
-        Invoke("SpawnChris", 60f);
+        Invoke("SpawnChris", 300f);
     }
 
     // Update is called once per frame
