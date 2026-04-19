@@ -2867,10 +2867,10 @@ MonoBehaviour:
     spawnCount: 0
   - waveName: Wave 3
     enemyGroups:
-    - enemyName: Goose
-      enemyCount: 0
+    - enemyName: Green Goose
+      enemyCount: 5
       spawnCount: 0
-      enemyPrefab: {fileID: 7397034227268771249, guid: d67260302ef4a48ec90d5415cb330a64, type: 3}
+      enemyPrefab: {fileID: 7397034227268771249, guid: 5658890d0955f934f95ce6874054444c, type: 3}
     - enemyName: Dark Goose
       enemyCount: 10
       spawnCount: 0
@@ -2880,40 +2880,40 @@ MonoBehaviour:
     spawnCount: 0
   - waveName: Wave 4
     enemyGroups:
-    - enemyName: Goose
+    - enemyName: Green Goose
       enemyCount: 10
       spawnCount: 0
-      enemyPrefab: {fileID: 7397034227268771249, guid: d67260302ef4a48ec90d5415cb330a64, type: 3}
-    - enemyName: Dark Goose
-      enemyCount: 10
+      enemyPrefab: {fileID: 7397034227268771249, guid: 5658890d0955f934f95ce6874054444c, type: 3}
+    - enemyName: Pink Goose
+      enemyCount: 5
       spawnCount: 0
-      enemyPrefab: {fileID: 7397034227268771249, guid: 9273ca86abceb48e5a88996228d780f2, type: 3}
+      enemyPrefab: {fileID: 7397034227268771249, guid: 2a3c2e51608f78d4787875ae942983bb, type: 3}
     waveQuota: 0
     spawnInterval: 1
     spawnCount: 0
   - waveName: Wave 5
     enemyGroups:
-    - enemyName: Goose
-      enemyCount: 15
+    - enemyName: Pink Goose
+      enemyCount: 10
       spawnCount: 0
-      enemyPrefab: {fileID: 7397034227268771249, guid: d67260302ef4a48ec90d5415cb330a64, type: 3}
-    - enemyName: Dark Goose
-      enemyCount: 15
+      enemyPrefab: {fileID: 7397034227268771249, guid: 2a3c2e51608f78d4787875ae942983bb, type: 3}
+    - enemyName: Green Goose
+      enemyCount: 10
       spawnCount: 0
-      enemyPrefab: {fileID: 7397034227268771249, guid: 9273ca86abceb48e5a88996228d780f2, type: 3}
+      enemyPrefab: {fileID: 7397034227268771249, guid: 5658890d0955f934f95ce6874054444c, type: 3}
     waveQuota: 0
     spawnInterval: 1
     spawnCount: 0
   - waveName: Wave 6
     enemyGroups:
-    - enemyName: Goose
-      enemyCount: 5
+    - enemyName: ' Goose'
+      enemyCount: 10
       spawnCount: 0
       enemyPrefab: {fileID: 7397034227268771249, guid: d67260302ef4a48ec90d5415cb330a64, type: 3}
-    - enemyName: Dark Goose
+    - enemyName: Pink Goose
       enemyCount: 30
       spawnCount: 0
-      enemyPrefab: {fileID: 7397034227268771249, guid: 9273ca86abceb48e5a88996228d780f2, type: 3}
+      enemyPrefab: {fileID: 7397034227268771249, guid: 2a3c2e51608f78d4787875ae942983bb, type: 3}
     waveQuota: 0
     spawnInterval: 1
     spawnCount: 0
@@ -10699,7 +10699,7 @@ MonoBehaviour:
   - {fileID: 1080716134}
   isGameOver: 0
   choosingUpgrades: 0
-  timeLimit: 120
+  timeLimit: 500
   stopwatchDisplay: {fileID: 1823032264}
   playerObject: {fileID: 1963704551}
 --- !u!114 &2070912027
