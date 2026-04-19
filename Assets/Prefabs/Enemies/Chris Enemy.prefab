@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -5068007776484375787}
   - component: {fileID: 5122301469930301353}
   m_Layer: 7
-  m_Name: Chris_Walk_Cycle_Sprite_Sheet_0
+  m_Name: Chris Enemy
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

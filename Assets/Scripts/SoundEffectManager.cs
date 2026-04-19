@@ -46,10 +46,8 @@ public class SoundEffectManager : MonoBehaviour
         // Randomly select a clip
         AudioClip randomClip = effect.clips[Random.Range(0, effect.clips.Count)];
         
-        // Apply pitch variation for more natural sound
-        audioSource.pitch = 1f + Random.Range(-effect.pitchVariation, effect.pitchVariation);
-        
         // Play the sound
         audioSource.PlayOneShot(randomClip, effect.volume);
+        
     }
 }

@@ -10,6 +10,7 @@ public class EnemyMovement : MonoBehaviour
     
     UnityEngine.Vector2 knockbackVelocity;
     float knockbackDuration;
+    
 
     void Start()
     {
